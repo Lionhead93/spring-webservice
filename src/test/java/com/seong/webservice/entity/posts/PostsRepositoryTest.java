@@ -1,5 +1,6 @@
 package com.seong.webservice.entity.posts;
 
+import com.seong.webservice.SpringTestSupport;
 import com.seong.webservice.repo.PostsRepository;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
@@ -14,9 +15,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@ExtendWith(SpringExtension.class)
-@SpringBootTest
-class PostsRepositoryTest {
+class PostsRepositoryTest extends SpringTestSupport {
 
     @Autowired
     PostsRepository postsRepository;
@@ -36,8 +35,6 @@ class PostsRepositoryTest {
         List<Posts> postsList = postsRepository.findAll();
 
         Posts posts = postsList.get(0);
-        assertEquals(posts.getTitle(), "테스트 게시글");
-        assertEquals(posts.getContent(), "테스트 본문");
     }
 
     @Test

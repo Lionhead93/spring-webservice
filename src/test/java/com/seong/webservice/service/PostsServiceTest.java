@@ -1,5 +1,6 @@
 package com.seong.webservice.service;
 
+import com.seong.webservice.SpringTestSupport;
 import com.seong.webservice.dto.PostsMainResDto;
 import com.seong.webservice.dto.PostsSaveReqDto;
 import com.seong.webservice.entity.posts.Posts;
@@ -16,9 +17,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.*;
 
-@ExtendWith(SpringExtension.class)
-@SpringBootTest
-class PostsServiceTest {
+class PostsServiceTest extends SpringTestSupport {
 
     @Autowired
     PostsService postsService;

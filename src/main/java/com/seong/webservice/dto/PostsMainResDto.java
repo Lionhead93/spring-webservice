@@ -2,7 +2,6 @@ package com.seong.webservice.dto;
 
 import com.seong.webservice.entity.posts.Posts;
 import lombok.Getter;
-import lombok.ToString;
 
 import java.time.format.DateTimeFormatter;
 
