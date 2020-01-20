@@ -1,7 +1,3 @@
-spring:
-  profiles:
-    active: dev # 기본 환경 선택
-
 # dev 환경
 ---
 spring:
@@ -16,21 +12,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create-drop
-
----
-spring:
-  profiles: test
-  datasource:
-    data: classpath:data-local.sql
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: create-drop
-
-  h2:
-    console:
-      enabled: true
-
 # 운영 환경
 ---
 spring.profiles: set1
