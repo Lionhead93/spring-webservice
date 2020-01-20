@@ -7,6 +7,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
-@ActiveProfiles("local")
+@ActiveProfiles("test")
 public abstract class SpringTestSupport {
 }
