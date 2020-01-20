@@ -20,7 +20,8 @@ spring:
 ---
 spring:
   profiles: test
-
+  datasource:
+    data: classpath:data-local.sql
   jpa:
     show-sql: true
     hibernate:
